@@ -1,0 +1,19 @@
+.mega-menu {
+  width: 900px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mega-menu .dropdown-item {
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.mega-menu h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.navbar-shadow {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: box-shadow 0.3s ease-in-out;
+}
