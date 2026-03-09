@@ -1,0 +1,88 @@
+/* ============================= */
+/* BIG FOOTER */
+/* ============================= */
+
+.big-footer {
+    background: linear-gradient(90deg,#4f66c0,#586fd4);
+    padding: 70px 60px;
+    color: white;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-col h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-col h3::after {
+    content: "";
+    width: 45px;
+    height: 3px;
+    background: #ff6a00;
+    display: block;
+    margin-top: 8px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ff6a00;
+    padding-left: 6px;
+}
+
+/* ============================= */
+/* COPYRIGHT */
+/* ============================= */
+
+.footer-copyright {
+    background: #e5e5e5;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+    color: #333;
+}
+
+.footer-copyright span {
+    color: #ff6a00;
+    font-weight: 600;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media(max-width: 992px) {
+
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .big-footer {
+        padding: 50px 30px;
+    }
+}

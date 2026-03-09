@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Digital Marketing | NextGen Innovation AI</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/digital-marketing.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div id="navbar-placeholder"></div>
+
+<script>
+fetch("../navbar.html")
+.then(res=>res.text())
+.then(data=>{
+document.getElementById("navbar-placeholder").innerHTML=data;
+});
+</script>
+
+
+<!-- HERO -->
+<section class="dm-hero">
+<h1>Digital Marketing Services</h1>
+<p>Grow your business online with powerful digital marketing strategies.</p>
+</section>
+
+
+
+<!-- MAIN SECTION -->
+
+<section class="dm-section">
+
+<div class="container dm-layout">
+
+
+<!-- SIDEBAR -->
+
+<aside class="dm-sidebar">
+
+<h3>Our Services</h3>
+
+<ul>
+
+<li><a href="software-development.html">Software Development</a></li>
+
+<li><a href="web-development.html">Web Development</a></li>
+
+<li class="active">
+<a href="digital-marketing.html">Digital Marketing</a>
+</li>
+
+<li><a href="mobile-app.html">Mobile Applications</a></li>
+
+<li><a href="graphics-design.html">Graphic Designing</a></li>
+
+</ul>
+
+</aside>
+
+
+
+<!-- CONTENT -->
+
+<div class="dm-content">
+
+<h2>Best Digital Marketing Company in Pune</h2>
+
+<p>
+
+NextGen Innovation AI provides professional digital marketing services
+designed to increase your online visibility, generate leads and grow your
+brand presence.
+
+</p>
+
+
+<!-- IMAGE SLIDER -->
+
+<div class="slider">
+
+<div class="slides">
+
+<img src="https://images.unsplash.com/photo-1557838923-2985c318be48">
+
+<img src="https://images.unsplash.com/photo-1559028012-481c04fa702d">
+
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f">
+
+</div>
+
+<button class="prev">❮</button>
+<button class="next">❯</button>
+
+</div>
+
+
+
+<h2>Our Digital Marketing Services</h2>
+
+<div class="dm-features">
+
+<div class="dm-card">
+<h4>Search Engine Optimization</h4>
+<p>Improve website ranking and drive organic traffic.</p>
+</div>
+
+<div class="dm-card">
+<h4>Social Media Marketing</h4>
+<p>Promote your brand on Facebook, Instagram and LinkedIn.</p>
+</div>
+
+<div class="dm-card">
+<h4>Google Ads (PPC)</h4>
+<p>Target customers through paid search advertising.</p>
+</div>
+
+<div class="dm-card">
+<h4>Content Marketing</h4>
+<p>Create engaging content to build brand authority.</p>
+</div>
+
+</div>
+
+
+
+<h2>Tools & Platforms We Use</h2>
+
+<div class="tool-grid">
+
+<div class="tool-card">
+<img src="https://cdn-icons-png.flaticon.com/512/270/270798.png">
+<h4>Google Analytics</h4>
+</div>
+
+<div class="tool-card">
+<img src="https://cdn-icons-png.flaticon.com/512/281/281764.png">
+<h4>Google Ads</h4>
+</div>
+
+<div class="tool-card">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+<h4>Facebook Ads</h4>
+</div>
+
+<div class="tool-card">
+<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+<h4>LinkedIn Ads</h4>
+</div>
+
+</div>
+
+
+
+<h2>Our Marketing Process</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h4>Research</h4>
+<p>Analyze your business, competitors and market.</p>
+</div>
+
+<div class="timeline-item">
+<h4>Strategy</h4>
+<p>Create a data-driven digital marketing plan.</p>
+</div>
+
+<div class="timeline-item">
+<h4>Execution</h4>
+<p>Implement campaigns across SEO, PPC and social media.</p>
+</div>
+
+<div class="timeline-item">
+<h4>Optimization</h4>
+<p>Track performance and improve campaign results.</p>
+</div>
+
+</div>
+
+
+
+<h2>Client Benefits</h2>
+
+<ul class="benefits">
+
+<li>✔ Increased website traffic</li>
+<li>✔ Higher search engine rankings</li>
+<li>✔ Strong online brand presence</li>
+<li>✔ More leads and conversions</li>
+<li>✔ Better ROI from marketing campaigns</li>
+
+</ul>
+
+
+</div>
+</div>
+</section>
+
+
+
+<!-- CONSULTATION FORM -->
+
+<section class="quote">
+
+<h2>Start Your Digital Growth Today</h2>
+
+<form class="quote-form">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email Address">
+
+<textarea placeholder="Project Requirements"></textarea>
+
+<button>Get Free Consultation</button>
+
+</form>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<div id="footer-placeholder"></div>
+
+<script>
+fetch("../footer.html")
+.then(res=>res.text())
+.then(data=>{
+document.getElementById("footer-placeholder").innerHTML=data;
+});
+</script>
+
+
+
+<!-- SLIDER SCRIPT -->
+
+<script>
+
+const slides=document.querySelector('.slides');
+
+const images=document.querySelectorAll('.slides img');
+
+const prev=document.querySelector('.prev');
+
+const next=document.querySelector('.next');
+
+let index=0;
+
+function showSlide(){
+
+slides.style.transform=`translateX(${-index*100}%)`;
+
+}
+
+next.onclick=()=>{
+
+index++;
+
+if(index>=images.length) index=0;
+
+showSlide();
+
+};
+
+prev.onclick=()=>{
+
+index--;
+
+if(index<0) index=images.length-1;
+
+showSlide();
+
+};
+
+setInterval(()=>{
+
+index++;
+
+if(index>=images.length) index=0;
+
+showSlide();
+
+},4000);
+
+</script>
+
+</body>
+</html>
