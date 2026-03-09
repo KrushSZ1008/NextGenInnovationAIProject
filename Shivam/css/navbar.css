@@ -1,0 +1,234 @@
+/* ===================== */
+/* TOP CONTACT BAR */
+/* ===================== */
+
+.topbar {
+    background: #1f2937;
+    color: #fff;
+    padding: 8px 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+/* ===================== */
+/* MAIN NAVBAR */
+/* ===================== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.logo-main {
+    font-size: 22px;
+    color: #1e3a8a;
+}
+
+.logo-sub {
+    font-size: 13px;
+    color: #ff6a00;
+}
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+/* Hover underline effect */
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #2563eb;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+/* ACTIVE LINK */
+
+.nav-links a.active {
+    color: #ff6a00;
+}
+
+/* CTA BUTTON */
+
+.btn-consult {
+    background: #ff6a00;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-consult:hover {
+    background: #e65c00;
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media(max-width: 992px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .topbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+}
+
+/* DROPDOWN MENU */
+
+.dropdown{
+position:relative;
+}
+
+.dropdown-menu{
+
+position:absolute;
+
+top:40px;
+
+left:0;
+
+background:white;
+
+width:260px;
+
+border-radius:12px;
+
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+
+padding:15px 0;
+
+opacity:0;
+
+visibility:hidden;
+
+transform:translateY(15px);
+
+transition:0.4s ease;
+
+}
+
+/* SHOW DROPDOWN */
+
+.dropdown:hover .dropdown-menu{
+
+opacity:1;
+
+visibility:visible;
+
+transform:translateY(0);
+
+}
+
+/* MENU ITEMS */
+
+.dropdown-menu li{
+
+list-style:none;
+
+}
+
+.dropdown-menu li a{
+
+display:block;
+
+padding:14px 25px;
+
+color:#444;
+
+text-decoration:none;
+
+font-weight:500;
+
+position:relative;
+
+}
+
+/* LINE ANIMATION */
+
+.dropdown-menu li a .line{
+
+position:absolute;
+
+left:25px;
+
+bottom:8px;
+
+width:0%;
+
+height:2px;
+
+background:#ff6a00;
+
+transition:0.3s;
+
+}
+
+.dropdown-menu li a:hover .line{
+
+width:80%;
+
+}
+
+/* HOVER EFFECT */
+
+.dropdown-menu li a:hover{
+
+color:#ff6a00;
+
+}
