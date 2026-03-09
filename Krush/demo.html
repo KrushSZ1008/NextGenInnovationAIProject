@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <nav class="navbar">
+  <div class="nav-container">
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="logo.png" alt="NextGen Logo">
+      <span>NextGen Innovation</span>
+    </div>
+
+    <!-- Menu -->
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#" class="active">Home</a></li>
+
+      <li class="dropdown">
+        <a href="#">Institute ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">About Institute</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Placements</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#">Services ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Training</a></li>
+          <li><a href="#">Internship</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- Right Section -->
+    <div class="nav-right">
+      <div class="search-box">
+        <input type="text" placeholder="Search courses...">
+        <button>🔍</button>
+      </div>
+
+      <button class="btn student">Student Login</button>
+      <button class="btn client">Client Login</button>
+
+      <!-- Mobile Menu Button -->
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+<script>
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("show");
+}
+</script>
+</body>
+</html>

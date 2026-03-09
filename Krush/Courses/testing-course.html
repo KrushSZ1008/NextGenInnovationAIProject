@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Software Testing with AI Curriculum</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+  background:#1f1f1f;
+  color:#fff;
+}
+
+.section-title{
+  text-align:center;
+  font-weight:700;
+  margin:40px 0;
+}
+
+.left-panel{
+  background:#2d5f7d;
+  padding:30px;
+  border-radius:10px;
+}
+
+.stat-box{
+  background:#f1f1f1;
+  color:#000;
+  padding:15px;
+  border-radius:8px;
+  margin-top:15px;
+}
+
+.timeline{
+  position:relative;
+  padding-left:40px;
+}
+
+.timeline::before{
+  content:"";
+  position:absolute;
+  left:15px;
+  top:0;
+  width:3px;
+  height:100%;
+  background:#6c757d;
+}
+
+.timeline-dot{
+  position:absolute;
+  left:8px;
+  width:15px;
+  height:15px;
+  background:#fff;
+  border-radius:50%;
+  border:3px solid #0d6efd;
+}
+
+.accordion-button{
+  background:#e9ecef;
+  color:#000;
+  font-weight:600;
+}
+
+.tag{
+  background:#c6ff00;
+  color:#000;
+  padding:3px 10px;
+  border-radius:20px;
+  font-size:12px;
+  margin-left:10px;
+}
+
+.duration{
+  float:right;
+  font-size:14px;
+  color:#0d6efd;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h2 class="section-title">Software Testing with AI Curriculum</h2>
+
+  <div class="row">
+
+    <!-- LEFT PANEL -->
+    <div class="col-lg-4">
+      <div class="left-panel">
+
+        <h4>Industry-Oriented Curriculum</h4>
+        <p>
+          Explore each topic in-depth through interactive sessions,
+          real-world use cases, and tool-based learning.
+        </p>
+
+        <div class="stat-box">
+          <h5>10+</h5>
+          <p>Case Studies & Projects</p>
+        </div>
+
+        <div class="stat-box">
+          <h5>15+</h5>
+          <p>Languages & Tools</p>
+        </div>
+
+        <div class="stat-box">
+          <h5>160+</h5>
+          <p>Live Sessions Hours</p>
+        </div>
+
+        <button class="btn btn-warning w-100 mt-3">Download Brochure</button>
+
+      </div>
+    </div>
+
+    <!-- RIGHT TIMELINE -->
+    <div class="col-lg-8">
+      <div class="timeline">
+
+        <div class="timeline-dot" style="top:20px;"></div>
+
+        <div class="accordion mb-3" id="curriculum">
+
+          <!-- Manual Testing -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#manual">
+                Manual Testing Fundamentals
+                <span class="tag">#manualtesting</span>
+                <span class="duration"><i class="fa-regular fa-clock"></i> 3.8 weeks</span>
+              </button>
+            </h2>
+
+            <div id="manual" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <ul class="row">
+                  <li class="col-md-6">Software Testing Basics</li>
+                  <li class="col-md-6">Test Documentation & Traceability</li>
+                  <li class="col-md-6">Testing Types</li>
+                  <li class="col-md-6">Defect Management</li>
+                  <li class="col-md-6">Testing Techniques</li>
+                  <li class="col-md-6">Agile Basics</li>
+                  <li class="col-md-6">JIRA for Testers</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programming for QA -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#qa">
+                Programming Essentials for QA
+                <span class="tag">#QA</span>
+                <span class="duration"><i class="fa-regular fa-clock"></i> 4 weeks</span>
+              </button>
+            </h2>
+
+            <div id="qa" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul>
+                  <li>Java Basics for Testing</li>
+                  <li>OOP Concepts</li>
+                  <li>Collections for Selenium</li>
+                  <li>Exception Handling</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Selenium -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#selenium">
+                Test Automation with Selenium
+                <span class="tag">#automation</span>
+                <span class="duration"><i class="fa-regular fa-clock"></i> 3.6 weeks</span>
+              </button>
+            </h2>
+
+            <div id="selenium" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul>
+                  <li>Selenium WebDriver</li>
+                  <li>Locators & XPath</li>
+                  <li>TestNG Framework</li>
+                  <li>Page Object Model</li>
+                  <li>Maven Integration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- API Testing -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#api">
+                API Testing
+                <span class="tag">#postman</span>
+                <span class="duration"><i class="fa-regular fa-clock"></i> 1.2 weeks</span>
+              </button>
+            </h2>
+
+            <div id="api" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul>
+                  <li>Postman Basics</li>
+                  <li>API Request Methods</li>
+                  <li>JSON Validation</li>
+                  <li>Automation with Newman</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- DevOps -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#devops">
+                DevOps & AI in Testing
+                <span class="tag">#DevOps</span>
+                <span class="duration"><i class="fa-regular fa-clock"></i> 2.8 weeks</span>
+              </button>
+            </h2>
+
+            <div id="devops" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul>
+                  <li>Jenkins CI/CD</li>
+                  <li>Git Integration</li>
+                  <li>AI in Test Automation</li>
+                  <li>Self-Healing Scripts</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ISTQB -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#istqb">
+                ISTQB Preparation
+                <span class="tag">#ISTQB</span>
+                <span class="duration"><i class="fa-regular fa-clock"></i> 1 week</span>
+              </button>
+            </h2>
+
+            <div id="istqb" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul>
+                  <li>ISTQB Foundation Syllabus</li>
+                  <li>Mock Tests</li>
+                  <li>Exam Preparation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

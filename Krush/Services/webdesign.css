@@ -1,0 +1,38 @@
+.service{
+padding:60px;
+text-align:center;
+}
+
+.service img{
+margin:20px 0;
+border-radius:10px;
+}
+
+.contact{
+background:#f4f4f4;
+padding:50px;
+text-align:center;
+}
+
+form{
+width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input, textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#007bff;
+color:white;
+border:none;
+padding:12px;
+border-radius:5px;
+cursor:pointer;
+}
